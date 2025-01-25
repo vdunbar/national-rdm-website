@@ -18,10 +18,10 @@ ul li {
 .chapter-connection {
     margin-top: 2em;
     margin-right: 2em;
-  padding: 1em;
-  background: #fff;
-  border: 1px solid;
-  font-size: .75em;
+    padding: 1em;
+    background: #fff;
+    border: 1px solid;
+    font-size: .75em;
 }
 
 #institutionList ul {
@@ -57,6 +57,7 @@ ul li {
     width: 70%;
     margin: auto;
 }
+
 #menuItems {
     margin-top: calc(100vh/6);
     display: flex;
