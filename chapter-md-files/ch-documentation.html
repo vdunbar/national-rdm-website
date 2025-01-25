@@ -1,0 +1,222 @@
+<style>
+    body {
+      width: 60%;
+      margin: auto;
+      font-family: sans-serif;
+      font-size: 1em;
+    }
+</style>
+<h2 id="documentation">Documentation</h2>
+<p>Documentation provides a critical role in describing data and the
+contents of files, whether this be as a memory jog, to facilitate
+onboarding or other information sharing, to enhance the reproducibility
+and transparency of your work, or to let others know how they may or may
+not use what you have generated. Without documentation, data are, for
+all intents and purposes, meaningless at best and useless at worst. </p>
+<p>In the section on file naming, we saw that when naming files, you
+provide a base level of documentation through metadata embedded in these
+file names and described by file naming conventions. Even so, only so
+much information is stored in a file name, and our naming conventions
+need to be documented somewhere to be implemented and understood. In the
+context of research data management, this means creating at a minimum
+four files: </p>
+<ul>
+<li><p>A <strong>readme</strong> file that resides in your <strong>root
+folder</strong> and elaborates on the contents of your folder
+structure. </p></li>
+<li><p>A <strong>readme</strong> file that resides in your <strong>data
+directory</strong> and discusses some of the particulars of the how,
+where, and who did the actual data collection. </p></li>
+<li><p>A <strong>data dictionary</strong> or <strong>codebook</strong>
+file that also resides in your data directory and elaborates on the kind
+of data you have, at the variable level. </p></li>
+<li><p>A <strong>licence</strong> file that resides in your <strong>root
+folder</strong> and details how others may or may not re-use your
+research data and associated files. </p></li>
+</ul>
+<blockquote>
+<p>Note </p>
+<p>The role of the readme and the data dictionary, or codebook, that
+reside in a data directory are generally distinct. The readme is
+intended to describe the data’s provenance - when and by whom were the
+data collected - while the data dictionary is intended to describe the
+variables (data types, variable descriptions, etc.). It is very possible
+that in certain circumstances this differentiation across two files is
+not necessary, and the information can be contained in a single file.
+Aspects of this are described in more detail below. </p>
+<p>A single licence file may not suffice for many projects, and may only
+be needed at a point when data are moved from an area of restricted
+access to one of more public access, such as when depositing data to
+support a publication. </p>
+</blockquote>
+<h3 id="general-considerations">General Considerations</h3>
+<p>It is important that these files stand out, as they are the first
+things one should look at when opening any directory or folder. There
+are several ways that we might achieve this. If you primarily use the
+Finder (Mac) or Windows Explorer (PC) to navigate your files,
+pre-prepending the file names with an underscore, <code>_</code>, can
+help to push the files to the top of the list when files are displayed
+alphabetically. Another technique is to use capital case when naming
+these files. This is in contradiction to the recommendations in the file
+naming section that encourages use of only lower-case characters, but
+may work for specific situations. The alternative is to simply use lower
+case without a prepended underscore. The most important thing is
+consistency. The second most important thing is to use a convention that
+facilitates your work or conventions in your discipline, if there are
+any. </p>
+<p>If we agree that data without documentation are meaningless, then it
+follows that it is important that documentation be stored in file
+formats that will have longevity in storage. It is also important that
+the documentation be portable; in general, this means writing
+documentation in plain text. For the purposes of a readme file, this
+means with a .txt or .md file extension, and for a data dictionary,
+.txt, .md, .csv, .xml, .json, .yml, etc. More information about these
+file types can be found in file formats. </p>
+<h3 id="root-folder-readme">Root Folder readme</h3>
+<p>The purpose of this document, at a bare minimum, is to describe the
+directory structure of your project. To adequately describe your
+directory structure, you should include: </p>
+<ul>
+<li><p>A brief description of the project or the purpose of the root
+folder </p></li>
+<li><p>The date when the root folder was created and who created
+it </p></li>
+<li><p>The date when the readme file was last updated and who updated
+it </p></li>
+<li><p>A brief description of the contents of each major folder within
+the root folder </p></li>
+<li><p>A brief description of file naming conventions used within the
+directory </p></li>
+</ul>
+<h3 id="data-directory-readme">Data Directory Readme</h3>
+<p>The purpose of this readme file is to provide a description of data
+collection methods. It will include, at a minimum: </p>
+<ul>
+<li><p>The date when the data directory was created and who created
+it </p></li>
+<li><p>The date when the readme file was updated and who updated
+it </p></li>
+<li><p>A brief description of each data that was collected, the methods
+used for collection, and the date range for when each dataset was
+collected </p></li>
+<li><p>A description of who was involved in data collection </p></li>
+<li><p>A brief description of where the data were collected </p></li>
+</ul>
+<h3 id="data-dictionaries-codebooks">Data Dictionaries &amp;
+Codebooks</h3>
+<p>A data dictionary or codebook helps others understand the meaning of
+each element in your datasets. Most importantly, this includes
+explaining what all the variable names and values in your dataset really
+mean. Typically, you will have an individual data dictionary for each
+dataset, if you have more than one dataset. </p>
+<p>Data dictionaries may be written in an unstructured document –
+interpretable by a human, but not a computer program – or in a
+structured document – interpretable by both a human and computer
+program. An unstructured document would communicate the above details
+simply as prose. A structured document would communicate the above
+through some form of meta data that has set rules for how meta data are
+separated from the values of interest (for example,
+<code>first_name</code> might be a meta data element, while, in the case
+of one of the authors of this text, <code>Jordan</code>, would be a
+value associated with this). Structured formats may adhere to standards,
+which will be discussed later. For a more in depth discussion of the
+difference between human and computer interpretable ways of articulating
+information, refer to the section on file naming. </p>
+<p>From the list of plain text file formats above, .txt and .md are
+generally suitable for unstructured data dictionaries or codebooks,
+while the others are suitable for structured data dictionaries and
+codebooks. </p>
+<p>Your data dictionary or codebook should include: </p>
+<ul>
+<li><p>The date when the data dictionary was created and who created
+it </p></li>
+<li><p>The date when the data dictionary file was updated and who
+updated it </p></li>
+<li><p>A description of each variable, including data type, units,
+number of levels if categorical, and a description of variable levels
+where relevant </p></li>
+<li><p>When describing variables you need to provide the full names and
+definitions of each variable because often variables are abbreviated in
+datasets. This is of particular note for things like survey
+questions. </p></li>
+</ul>
+<h3 id="metadata-standards">Metadata Standards</h3>
+<p>The primary reason for storing data dictionaries and codebooks in a
+structured format is to facilitate interacting with these with a
+computer program. Just like with file naming conventions, patterns allow
+for programmatic parsing of information; structured documents follow
+known patterns. Moving a step beyond structured documents, you can use
+standardized metadata implementations and standardized vocabularies to
+further enhance how easily this information is moved between systems;
+this is the I - interoperable - in FAIR. Metadata standards generally
+provide a controlled way of identifying and describing aspects of one’s
+data, such as: what’s a variable, what’s a scale, what are the possible
+values (levels or range) that may be assigned to a variable etc.
+Standardized vocabularies are perhaps less common and provide a preset
+number of valid values that a variable might take. When using
+standardized implementations, it is not necessary for you to describe
+how your metadata is structured, instead you simply refer to the
+standard. </p>
+<p>Some disciplines have more robust standards implemented than others.
+A handful of common standards include the Data Documentation Initiative
+(DDI), for survey data, schema.org for describing entities on the web,
+and DarwinCore for describing biological collections. </p>
+<p>It is very likely that in the context of a small research project,
+the use of a standard may seem unwarranted. However, if a research lab
+routinely collects similar data across many studies, aggregating these
+data across studies in accordance with a standard can be hugely
+beneficial. These standards will also come into play if the data with
+which you work is well suited to deposit in aggregating databases of
+research data. </p>
+<p>If the data that you and your lab work with is suitable for deposit
+and sharing, you should consider how you can move from simply
+documenting your data to documenting your data using a standardized
+approach. The most relevant standard will likely be indicated by
+whatever data repository you and or your lab decide to contribute to.
+Some of these standards will allow you to specify labels all the way
+down to the variable level (biological data with DarwinCore is an
+excellent example, as taxonomic ranking is often a variable), others
+will simply allow you to indicate that something is a variable and to
+describe it (DDI is an excellent example, as a survey question is a
+variable), and others will allow you to describe the data set as a
+whole, but not its variables (schema.org is an excellent example, as
+it’s designed to connect ‘objects’ on the web). </p>
+<h3 id="qualitative-research-data">Qualitative Research Data</h3>
+<p>The above discussion is of high relevance to quantitative data,
+whether experimental, observational, survey-based etc. A data dictionary
+or code book for qualitative research may likely look quite different.
+Mapping themes to language, characteristics to objects etc., and having
+a record of these, however, may still have strong relevance. </p>
+<p>The important thing to recall is that the documentation that
+surrounds data has a primary purpose of ensuring that the data has
+meaning to you, the researcher, and those who might look at your data
+alongside your findings (peers, reviewers, readers, etc.), and a
+secondary purpose of being machine readable so as to be able to connect
+it to similar data sets others have collected. If your data collection
+is not an extension of other research, the latter may be of little
+concern, but this is likely a rare occasion. </p>
+<h3 id="other-readme-files">Other readme files</h3>
+<p>It is advisable to have a readme in every directory. These readmes
+should mirror the readme in your root folder, describing the contents of
+the folder. As you progress from the root folder into subsequent sub
+directories, the level of detail in a readme will increase. For example,
+at the root level, the description of a data directory will likely read
+something like ‘contains all data for the project’, while any
+subdirectories in the data directory would articulate the specifics of
+the kind of data held in those directories. </p>
+<h3 id="licences">Licences</h3>
+<p>The goal of including a licence, generally as licence.txt, is to be
+able to clearly indicate how your data or other research outputs may be
+used or re-used by others. A licence file is a good compliment to
+project team internal discussions of intellectual ownership, the latter
+outlining control and ownership within the research team, the former
+guiding how those external to the project team can engage with the data
+and associated products. </p>
+<p>While a licence is of little utility before data are made publicly
+available, how your data is collected and analyzed may impact the
+licence that you are allowed to apply. It is advisable to pick a desired
+licence at the outset of your project and then align all data collection
+and processing activities to that licence, as opposed to trying to map a
+licence retroactively onto your data. </p>
+<p>See the section on ownership and licencing for more details on
+licencing data and associated products.</p>

@@ -1,0 +1,231 @@
+<style>
+    body {
+      width: 60%;
+      margin: auto;
+      font-family: sans-serif;
+      font-size: 1em;
+    }
+</style>
+<h2 id="data-storage">Data Storage</h2>
+<blockquote>
+<p>Note </p>
+<p>This section is about mediums of storage, locations of these mediums,
+and utility of various mediums for data processing and preservation.
+Organizing data files is covered elsewhere; see file naming for how to
+standardize your file names – see directory structures for how to
+standardize your directory structures. </p>
+</blockquote>
+<p>Data need to be stored. A simple statement, but not one without its
+complexities. Key aspects to data storage include access to the data by
+the researcher or research team, an appropriate level of security for
+the data being stored, and redundancy in storage solutions, i.e. having
+back-ups. </p>
+<h3 id="discussion">Discussion</h3>
+<p>Data storage is a complex issue involving file size determination,
+privacy and security, storage tied to specific software applications,
+with more and more of these applications operating in the cloud,
+jurisdictional requirements, transfer considerations, etc. The following
+is a relatively brief discussion of a few of these issues. </p>
+<p>Often, your IT department will handle storage solutions used jointly
+by researchers and administrative teams, forming the backbone of most
+day-to-day storage options, while your Advanced Research Computing team
+will handle research-specific storage solutions that cater to things
+like large data transfer and storage or high-performance computing.
+Finally, your library will handle data repositories that support long
+term storage of data or storage to support outputs such as
+publications. </p>
+<p>Data storage can be grouped into several categories. One is by
+medium, or the technology, used to store data. Another is by location of
+these storage devices. And a third is by whether or not a storage
+location allows one to actively work with data on that storage platform.
+Each of these facets of data storage will play into how one implements
+data storage for their research. </p>
+<h3 id="storage-by-activity">Storage by Activity</h3>
+<p>Generally, storage is conceptually divided into two activity
+categories: active storage and long-term storage. </p>
+<p><strong><em>Active Storage</em></strong></p>
+<p>Ease of access is critical when actively working with data. For this
+reason, active storage locations are generally close at hand, such as a
+physical hard disk. This can also include active storage over a network,
+whether that be an institutional network or the Internet. The further
+the data need to travel (internal hard drive &lt; external hard drive
+&lt; local network &lt; internet), the slower one’s access to these
+data. </p>
+<p>[possible image depicting speed of storage based on how far away it
+is] </p>
+<p>Active data storage options also need to account for who is working
+with the data. One person, with one computer may be well served by an
+internal hard drive. However, if that person is working off multiple
+computers, or is working with collaborators within or outside their
+institution, storage systems that are connected to a network or the
+Internet are more practical. </p>
+<p>Your primary active data location should balance this need for quick
+access alongside distributed access. At the same time, increased
+distribution heightens the risk of data being accessed by unintended
+audiences. </p>
+<p><strong><em>Long-term storage</em></strong> </p>
+<p>Long-term storage generally refers to the storage of files after the
+completion of a project, but can refer to storage of data for later
+access in larger projects. </p>
+<p>Compared to active storage, ease of access to long-term storage is
+less important, since the files are no longer in frequent use and are
+not undergoing frequent changes. However, long-term stability and
+potentially discoverability by the wider community are of greater
+concern. For this reason, long-term storage usually makes use of a
+third-party data repository, which provides robust metadata schemas that
+ensure that data are searchable and discoverable. Many also offer a
+variety of embargo and restricted access options, including public
+release of metadata only. Others offer convenient storage of extremely
+large data sets. </p>
+<p>Files in long term storage often need to be migrated to a different
+storage medium and location to be worked on. </p>
+<h3 id="storage-locations">Storage Locations</h3>
+<p>Storage locations may be local or remote, both of which can be
+beneficial. It is not uncommon to rely on both mediums as a way to
+facilitate efficient data workflows and ensure data is backed up. </p>
+<p><strong><em>Hard Drives</em></strong> </p>
+<p>Hard drives can include both the storage on your personal computer
+and external storage devices. These are often referred to as local
+storage, and are often the simplest option for the active storage of
+smaller to mid-range projects. A key benefit of hard drives is the ease
+of access to data and files because no Internet connection is required,
+and the files are directly accessible by your computer. </p>
+<p>It is recommended to encrypt files on local devices, which helps keep
+your data secure. As long as the devices remain in your possession, your
+data’s privacy and security will be maintained. With that said, the
+physical location in which you keep your computer(s) and external
+device(s) will be a primary factor in upholding the privacy and security
+of your data, and you want to always be conscious of who can access
+them. Another privacy consideration with using local storage is when
+traveling and crossing borders with data, as devices can be subject to
+being searched. </p>
+<p>A primary limitation of local storage is the difficulty of sharing
+data with project collaborators. It is common to use local storage in
+conjunction with remote storage to facilitate data sharing and to back
+your data up. </p>
+<p><strong><em>Network Storage</em></strong> </p>
+<p>Network storage is a form of remote storage, usually made available
+through institutions, and is likely hosted on-campus, but may be part of
+shared services across multiple institutions and located at a partner
+campus. </p>
+<p>This type of storage is usually reserved for active data, but your
+institution may also provide long-term network storage. Strengths of
+this type of storage are that it will often meet any on-premise
+requirements that your data may have, and it facilitates easy data
+sharing with collaborators at your institution. Network storage is often
+very private and secure, and because it is usually backed-up
+automatically, it is valuable in safeguarding your data. </p>
+<p>A drawback of network storage is that it can be challenging to share
+with collaborators outside your institution, and is often limited to use
+by faculty. Although network storage may be accessible through an
+Internet connection off campus, the connection and data transfer are
+usually not as fluid as with cloud storage. </p>
+<p><strong><em>Cloud Storage</em></strong> </p>
+<p>Cloud storage can be considered the most remote storage, as the data
+can be hosted on servers worldwide. It is generally the easiest way to
+share data with collaborators outside your institution and is usually
+necessary in these types of collaborations. </p>
+<p>The primary considerations with cloud storage revolve around privacy
+and security restrictions, and it is worth knowing where the data is
+being stored (domestically or internationally), and what security
+measures the cloud provider supports. Cloud storage is almost always
+provided by a third-party vendor (i.e. not actively managed by your
+institution), and may have costs associated with it (either for your
+institution or individuals), and therefore may not always be a viable
+option. </p>
+<h3 id="back-ups">Back ups</h3>
+<p>Most data can not be reasonably or easily re-collected within a
+single study, and losing data can be a challenge to recover from, so it
+is important to secure multiple copies to safeguard against loss. </p>
+<p>In the section on file naming we discuss strategies for managing
+multiple copies and iterations of data files in a single storage
+location. Here, we address the prevention of data loss with up-to-date
+backups of your files, and how many copies of files and the locations of
+these copies matters. </p>
+<p>There are many approaches to backing up files. One common approach is
+the 3-2-1 model:  </p>
+<ul>
+<li><p> <strong>3</strong> copies in </p></li>
+<li><p> <strong>2</strong> formats (i.e. laptop hard drive and removable
+hard drive) with </p></li>
+<li><p> <strong>1</strong> stored off-site (i.e. a different physical
+location to protect from physical damage or disasters) </p></li>
+</ul>
+<p>You will encounter other models. The important thing is that data are
+in multiple physical locations and that backups are routine (i.e., 
+scheduled back-ups). Whether the schedule is daily, weekly, bi-weekly,
+etc. depends completely on how safe proof you would like to keep your
+data. </p>
+<p>While these backups can be maintained manually, automated backup
+workflows are more convenient and, therefore, more likely to be used
+regularly - ensuring that backed-up versions of files are always
+current. </p>
+<blockquote>
+<p>Note </p>
+<p>Cloud storage can provide automatic backups and local syncing, but it
+is not always the perfect solution we might hope it would be. </p>
+<p>Historically, syncing often meant duplicating content in the cloud
+with content on the synced device, but this is increasingly not the
+case. Instead, a ‘just in time’ approach is used, where only files
+actively being used are synced to your local machine. This means that
+where once using cloud storage meant you had a backup system in place,
+this may no longer be the case. </p>
+<p>Syncing can also interfere with data processing. If you use an
+application that does real time processing on your data (image editing,
+audio editing, scripting, etc), these processes can conflict with
+automatic syncing processes, which inadvertently update files between
+local storage and the cloud. </p>
+</blockquote>
+<h3 id="estimating-storage-space">Estimating Storage Space</h3>
+<p>Accurately estimating storage space when you start your project is
+crucial. You will need to allocate storage for original data, processed
+and analyzed data, documentation that informs users about your data,
+draft papers, charts, visualizations, photos, and supplementary items
+that go within your papers. You will also need space for the
+administrative documents of your project, such as grant applications.
+Consult your with your institutional research support units if you are
+uncertain about how to estimate your storage requirements. Arrange for
+sufficient or additional storage well before it is actually required.
+Sometimes you have instant access to needed additional storage; in other
+cases, it takes time to gain access. </p>
+<h3 id="data-privacy-and-security">Data Privacy and Security</h3>
+<p>In file permissions and ownership we discuss implementing access
+controls to data files, which is a key aspect of privacy. In this
+section we talk more about security. Privacy relates to who can and
+should have access to data and the risks associated with the release of
+data beyond these individuals. Security refers to the technology used to
+limit data exposure beyond those designated with access. Data may have
+privacy concerns but not be secure, just as data may be secure but have
+no privacy concerns. One’s institution generally governs the security of
+the data storage infrastructure. A process known as a Privacy Impact
+Assessment is how most institutions determine the suitability of a
+specific piece of software or storage solution for specific data related
+activities. </p>
+<p><strong><em>Privacy Impact Assessments (PIA)</em></strong> </p>
+<p>A privacy impact assessment is a risk management and review process
+that mitigates threats to data security and unnecessary privacy
+violations. Depending on your jurisdiction or local policy, they may be
+required when using a new service or piece of software for a project.
+They may also be suggested or required during data access requests, for
+example when requesting access to highy sensitive data from a health
+authority or other government body.  </p>
+<p><strong><em>Public and External Access
+Considerations</em></strong> </p>
+<p>The nature of external or public access to a project is also
+significant to a project’s data management. It is important to have an
+awareness of the information privacy laws of the jurisdictions in which
+you work. Data access and permissions are especially important when
+sensitive data are involved, and ensuring adequate privacy is maintained
+through appropriate security measures should be a fundamental objective
+of the project from its inception. In terms of public and external
+access, consider: </p>
+<ul>
+<li><p>Data access requirements should reflect institutional policies
+and mandates </p></li>
+<li><p>Access standards may be affected by grant-specific
+requirements </p></li>
+<li><p>Providing information about institutional data access policies
+and mechanisms for external interest </p></li>
+<li><p>Any ethical obligations or desires of research participants and
+collaborators.</p></li>
+</ul>

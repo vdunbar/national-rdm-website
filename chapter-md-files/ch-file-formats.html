@@ -1,0 +1,302 @@
+<style>
+    body {
+      width: 60%;
+      margin: auto;
+      font-family: sans-serif;
+      font-size: 1em;
+    }
+</style>
+<h2 id="file-formats">File Formats</h2>
+<p>A file format refers to the underlying structure of a digital file
+and corresponds to the application(s) that you can expect to be able to
+open and work with the data stored in the file.  It is important to
+consider which file formats you should use to store your data. Also, if
+your data sources are stored in a digital format (such as an image,
+audio recording, video, etc.), equal consideration should be given to
+the file formats these are saved in. </p>
+<p>Sometimes the file formats you use will be dictated by things like
+your choice of software or data collection instruments (audio, video,
+statistical analysis, etc. applications often have built in file formats
+they use, while a data collection tool, whether a survey tool or a
+weather sensor, will also generally have a limited set of file formats
+that they save incoming data to). Irrespective, throughout the research
+data life cycle, you will likely be in a position to choose specific
+file formats for your data and your data sources – for example, the
+format chosen for preservation may differ from the format needed for
+analysis. </p>
+<p>File formats are generally represented as part of a file name, using
+a file extension. Common file formats for data with which you might be
+familiar include .xlsx, .csv, .xml, .spss, .Rdata, .shp, .json, etc.
+Common file formats for data sources range widely; finding the best
+format(s) may require consultation with peers in the field. For sources
+that are routinely preserved by memory institutions (image, audio,
+video, etc.), national bodies often provide extensive guidance. </p>
+<table>
+<colgroup>
+<col style="width: 10%" />
+<col style="width: 10%" />
+<col style="width: 24%" />
+<col style="width: 29%" />
+<col style="width: 25%" />
+</colgroup>
+<thead>
+<tr>
+<th>File format</th>
+<th>Licence</th>
+<th>Data structures</th>
+<th>Document type</th>
+<th>Application</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>.xlsx</td>
+<td>Proprietary</td>
+<td>Tabular data</td>
+<td>Excel spreadsheet</td>
+<td>Microsoft Excel</td>
+</tr>
+<tr>
+<td>.csv</td>
+<td>Open</td>
+<td>Tabular data</td>
+<td>Comma separated value</td>
+<td>Any spreadsheet application</td>
+</tr>
+<tr>
+<td>.xml</td>
+<td>Open</td>
+<td>Nested data</td>
+<td>Extensible Markup Language file</td>
+<td>Any programming language</td>
+</tr>
+<tr>
+<td>.spss</td>
+<td>Proprietary</td>
+<td>Tabular data with metadata</td>
+<td>SPSS data file</td>
+<td>SPSS</td>
+</tr>
+<tr>
+<td>.Rdata</td>
+<td>Open</td>
+<td>Tabular data with metadata</td>
+<td>R data file</td>
+<td>R programming language</td>
+</tr>
+<tr>
+<td>.shp</td>
+<td>Proprietary</td>
+<td>GIS boundary data</td>
+<td>ESRI shape file</td>
+<td>ArcGIS</td>
+</tr>
+<tr>
+<td>.json</td>
+<td>Open</td>
+<td>Nested data</td>
+<td>Javascript Object Notation file</td>
+<td>Any programming language</td>
+</tr>
+</tbody>
+</table>
+<p><em>Table x. Example file formats for holding data, their licence
+model, common data structures they hold, and their corresponding
+document types and applications.</em> </p>
+<h3 id="general-considerations">General Considerations</h3>
+<p><strong><em>Open vs. Proprietary Formats</em></strong> </p>
+<p>File formats may be free (open) or proprietary. Proprietary file
+formats are owned and controlled by a company or organization that
+limits their use, while open formats are freely published and available
+for public use without charge. In general, in the context of research,
+open formats are preferred as these enable practices related to
+transparency, reproducibility, and access. However, in some cases
+proprietary formats are so widely adopted that they become de facto
+standards in many disciplines, and in some cases are released in ways
+that allow them to mirror open options (e.g. Microsoft Word documents
+for manuscripts, Shapefiles for GIS data, etc). In these cases it can be
+hard or unwise to avoid their use. </p>
+<p><strong><em>Portability</em></strong> </p>
+<p>A file’s portability refers to how transferable it is across
+different hardware, operating systems, and applications. This is
+important for data sharing, since people who reuse your data might not
+have access to the same hardware and software as you, but it is also
+important for ensuring your own access in the future or on different
+devices. These aspects of data sharing also improve data transparency,
+research reproducibility, and open access. </p>
+<p>Common characteristics of good options for portable file types
+include: </p>
+<ul>
+<li><p>being an open standard, so they can be manipulated without
+needing access to proprietary software </p></li>
+<li><p>having widespread adoption and common usage, so other researchers
+will be used to handling them </p></li>
+</ul>
+<p><strong><em>Persistence</em></strong> </p>
+<p>Over time, file formats change and risk becoming obsolete, which can
+make accessing older files a challenge. For long-term access and storage
+of your data, it is therefore important to choose file formats that are
+more likely to remain in use. In general, formats with the following
+characteristics are most likely to be accessible in the future: </p>
+<ul>
+<li><p>Non-proprietary </p></li>
+<li><p>Openly documented standard </p></li>
+<li><p>Popular </p></li>
+<li><p>Uncompressed </p></li>
+<li><p>Unencrypted </p></li>
+<li><p>Standard encoding (ASCII, Unicode) </p></li>
+</ul>
+<p><strong><em>Proliferation</em></strong> </p>
+<p>In the interest of simplifying your workflow, it is usually best to
+minimize the number of file formats you use and need to support at any
+given stage in the research life cycle. The proliferation of formats
+offering similar capabilities but requiring different software to
+read/modify complicates workflows without necessarily offering much
+benefit to the user. </p>
+<h3 id="discussion">Discussion</h3>
+<p>There may be instances in the research life cycle when it makes more
+sense at one stage of a project to use one file format over another.
+There are many possible reasons for this, including that a specific file
+format may be required for analyses, or you may be working with research
+partners that have limited access to software. In such situations, you
+may find yourself going back and forth or possibly even maintaining
+copies of your data or source files in more than one format. </p>
+<p>As an example, when actively collecting and recording tabular data,
+Microsoft Excel (a proprietary option) may be the default tool of choice
+in most institutions. However, when analyzing this data you may migrate
+to a piece of statistical software, and store the data as a Stata, SPSS,
+MatLab, or R data file (some of these proprietary and others open
+standards), or to a qualitative coding tool, such as NVivo, which would
+have you store the data in a project wrapper like .nvp or .nvpx.
+Finally, when publishing this data to support a manuscript or funder
+requirements, you would be encouraged to convert your data to a fully
+open, highly portable format, like tab or comma separated value file
+types, with supporting text based documentation with additional
+metadata. </p>
+<p>If working in a novel environment, selecting the ‘best’ file type may
+be a challenge. In the days before the dominance of Microsoft’s suite of
+applications, a variety of competing, proprietary file formats were in
+common use. Now that many of Microsoft’s file formats have become de
+facto standards, accessing the data in those other proprietary file
+formats, generally considered obsolete, is increasingly more difficult
+if not impossible for most intents and purposes. </p>
+<p>Ultimately, it is important to select a file type that is most suited
+to the task at hand and to know what limitations exist when converting
+between file types. </p>
+<h3 id="best-practices">Best Practices</h3>
+<ul>
+<li><p>If possible, collect data in open and non-proprietary
+formats  </p></li>
+<li><p>If not possible to collect using open / non-proprietary formats,
+try to pick a format that can be easily converted to an open
+format </p></li>
+<li><p>Consider software and formats that are widely used within your
+discipline </p></li>
+<li><p>Be aware of software, hardware, and licensing requirements for
+viewing and working with data </p></li>
+<li><p>Be aware of using elements such as colour or highlighting as a
+form of metadata, as they may be lost if converted to a different
+format </p></li>
+</ul>
+<h3 id="a-note-on-plain-text">A Note on Plain Text</h3>
+<p>Whether qualitative or quantitative in nature, a lot of research data
+is text based. This text based data can be stored in many different file
+types and encoded in many different ways. A file format or file type
+describes a file’s structure and consequently how the data are
+displayed, and relationships between data represented, by an
+application. A file encoding describes how the data are encoded in a
+series of bytes (0s and 1s) in memory. </p>
+<p><strong><em>File format = file structure</em></strong> </p>
+<p>In a .csv file, data values are separated by commas, as in the
+following .csv text example: </p>
+<p>variable_1,variable_2,variable_3 </p>
+<p>1,3,5 </p>
+<p>7,9,13  </p>
+<p>This will be rendered by spreadsheet-handling software like Microsoft
+Excel to look something like: </p>
+<table>
+<thead>
+<tr>
+<th>variable_1</th>
+<th>variable_2</th>
+<th>variable_3</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>1</td>
+<td>3</td>
+<td>5</td>
+</tr>
+<tr>
+<td>7</td>
+<td>9</td>
+<td>13</td>
+</tr>
+</tbody>
+</table>
+<p><strong><em>File encoding = data</em></strong> </p>
+<p>In a binary encoding system that transmits data in 8 bit chunks (what
+your computer does), the following eight bits, 01101101, could represent
+any number of things. If we know these eight bits represent UTF-8
+encoding, then we know that these eight bits represent the lower case
+letter m. In a csv structured file, with UTF-8 encoding, the latter
+allows us to interpret the nature of the data (characters) while the
+former allows us to interpret structure (each value is separated by a
+comma). </p>
+<p>There are multiple text-encoding standards that have been produced,
+UTF-8 is perhaps the most widely used, alongside ASCII. UTF-8 and ASCII
+encoding can be employed in many differently structured file formats,
+including text files, .txt, comma separated value files, .csv, tab
+separated value files, .tsv, extended markup language files, .xml,
+hypertext files, .html, JavaScript Object Notation files, .json,
+etc. </p>
+<p>When a file is encoded in UTF-8 or ASCII in a file format that only
+uses character encoding, it is referred to as plain text. The benefit of
+plain text file formats is that even if the file format – the
+documentation related to structure – is lost, the file can still be
+opened by any application that can read ASCII or UTF-8 encoding; the
+data have extremely strong permanence. </p>
+<p><strong><em>UTF-8 and ASCII</em></strong> </p>
+<p>The ASCII standard encodes the representation of 128 characters; all
+letters in the English alphabet, the numbers 0-9, punctuation used in
+English, and a series of what are called non-printing characters - bytes
+that indicate the end of a line, a space, etc. This is an early standard
+with a long history that predates computers and that is still in wide
+use today, making it extremely robust. It is for this reason that, for
+example in file naming, it is suggested to limit the choice of
+characters to letters in the English alphabet and numbers 0-9; these
+file names are extremely portable across systems, if lacking in language
+diversity. </p>
+<p>The UTF-8 standard is significantly larger and encodes the
+representation of many, many more characters, striving to support all
+languages. UTF-8 is what is used on the world wide web, allowing for a
+truly multilingual experience. UTF-8 is fully backwards compatible with
+ASCII, which means an application expecting a UTF-8 encoded file will be
+able to open an ASCII encoded file without issue. UTF-8 is the preferred
+choice for file encoding. </p>
+<h3 id="a-note-on-file-compression">A Note on File Compression</h3>
+<p>In the context of research data, files that are not plain text are
+likely either a container of files or a compressed file. Containers hold
+multiple individual files but represent them as if they were a single
+thing. For example, Microsoft Word documents, .docx, are in fact
+containers holding multiple files that are rendered to the viewer as a
+single file. These containers may or may not use compression. Compressed
+files use techniques to reduce a file’s size while it is stored on a
+hard drive. </p>
+<p>A common approach to compression is to identify repeated pieces of
+data and to bundle these together for a more compact and less redundant
+articulation of the data in the file. Methods to achieve compression are
+often grouped by being lossy or lossless. Lossless compression allows
+for a complete re-creation of the original data when unpacked; in
+contrast lossy compression methods lose data along the way. An image
+stored as TIFF will be significantly larger than the same image stored
+as JPEG; TIFF is lossless, JPEG is lossy. When decompressed no
+information is lost in the TIFF image, but the same is not true for the
+JPEG. Lossy and lossless file types are most frequently encountered when
+working with digital image, audio, and video files. The choice of file
+format for images, video, and audio are complex and generally more than
+one file format is used. </p>
+<p>Plain text files can also be compressed; this is especially valuable
+when moving data or storing data for a long time as it reduces transfer
+times and needed storage.</p>

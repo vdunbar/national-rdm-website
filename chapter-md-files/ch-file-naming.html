@@ -1,0 +1,243 @@
+<style>
+    body {
+      width: 60%;
+      margin: auto;
+      font-family: sans-serif;
+      font-size: 1em;
+    }
+</style><h2 id="file-naming">File Naming</h2>
+
+<blockquote>
+<p>Note </p>
+<p>File naming, and file naming conventions, pertain to all digital
+files that form part of your research, including data, manuscripts,
+figures, etc. While following a convention or standard when naming files
+both within and across projects further decreases the cognitive load
+involved in finding and sorting what you are looking for, conventions
+for each of these will likely differ even within a single project as
+what is relevant to record in a manuscript’s file name will differ from
+a file containing research data. Our focus in any examples here will be
+on describing data, but the principles apply equally well to all digital
+files. </p>
+</blockquote>
+<p>The implementation of well thought out file naming is integral to
+well organized, described, and managed research. File names are the
+first piece of readily accessible metadata available. The more we can
+describe a file in its name, the less time we need to spend opening
+files to find what we are looking for, and one of the primary purposes
+of file naming is to save tedious time searching, allowing you to
+recognize the content of a file with ease. </p>
+<p>When properly implemented, file names ensure that files transferred
+between computers, operating systems, and platforms maintain their
+discoverability, integrity, and accessibility. Connected to this, file
+names form the basis of how information in a folder, or directory, can
+be sorted and parsed for access. Therefore, well named files interact
+well with programmatic methods for handling files. </p>
+<p>Two key concepts with file names are that they should be both human
+interpretable – they will make sense to a human reading them – and
+machine readable – they are structured in a way that a computer can be
+instructed to make sense of them. These concepts are described in more
+detail below. </p>
+<h3 id="quick-guide">Quick Guide</h3>
+<p>We will start with a quick reference, then break these down and
+explain the processes behind them: </p>
+<ul>
+<li><p>File names should only contain letters in the English alphabet,
+numbers from 0-9, dashes -, underscores _, and periods ., preferably
+only one period. </p></li>
+<li><p>Do not use spaces or special characters, such as # % &amp; &lt;
+&gt; : ” / | ? * { } $ ! ’ @ + = </p></li>
+<li><p>File names should be broken down into conceptual components –
+elements – that are separated by underscores _. If more than one word is
+needed in each conceptual component, these can be separated by dashes
+-. </p></li>
+<li><p>Concepts recorded in a file name may include a project
+descriptor, a descriptor of what is in the file, the name of the creator
+or author, a date, a version number, etc. </p></li>
+<li><p>File names should be all lowercase. </p></li>
+<li><p>Concepts – or elements – of a file name should be ordered by what
+is considered most important to the group. </p></li>
+<li><p>All of these elements should be meaningful and described in
+documentation. </p></li>
+<li><p>All file names should end with a file type extension. </p></li>
+<li><p>File naming conventions should be documented. </p></li>
+</ul>
+<h3 id="discussion">Discussion</h3>
+<p>**File names should only contain letters in the English alphabet,
+numbers from 0-9, dashes -, underscores _, and periods ., preferably
+only one period.** </p>
+<p>When operating in a multilingual or non-English environment, using
+only English letters can prove problematic. The implementation of
+character encoding and localization (character representation in a local
+language, such as accents or non-roman characters) is a complex subject
+that is beyond the scope of this text, but it is because of localization
+that in general, it is advised that file names be restricted to those
+characters not deemed ‘special’ and that are supported by the ASCII
+standard, which leaves us with the letters of the English alphabet, the
+numbers 0-9, and underscores, dashes, and periods. The ASCII standard is
+described in more detail in the chapter on file types. Ultimately, this
+guidance is about ensuring that files can be moved between computers
+with as much ease as possible. </p>
+<p><strong>Do not use spaces or special characters, including # % &amp;
+&lt; &gt; : ” / | ? * { } $ ! ’ @ + =</strong> </p>
+<p>The reason we do not use these characters is because they often have
+reserved meaning in computing environments, such as as operators (+, *,
+/) or to designate specific operations (boolean logic, sets, variable
+place holders, etc). The dash, interpretable as a minus sign, is one
+exception to this. A space is considered a special character in this
+context, since in many computing environments a space designates the end
+of one thing and the beginning of another.  </p>
+<p>**File names should be broken down into conceptual components –
+elements – that are separated by underscores _. If more than one word is
+needed in each conceptual component, these can be separated by dashes
+-.** </p>
+<p>Since spaces are considered a special character, it is convenient to
+have a way to visually introduce spaces. Convention suggests that
+underscores and hyphens are the characters of choice for this job. When
+introducing spaces in a file name, these spaces may be used to separate
+words relating to the same concept (i.e. an author’s name) or different
+concepts (i.e. an author’s name followed by a date). We suggest that
+concepts with more than one word be strung together with a dash and that
+different concepts be linked with an underscore. </p>
+<p>Instead of a dash, you may encounter suggestions to use camelback,
+which strings together words through capitalization, like this,
+camelBack. However, we discourage the use of capital letters in the
+context of file naming (see below for more details), and so do not
+promote this method. </p>
+<p>There are a handful of instances in which an underscore might not be
+desirable, but these are rare in the context of RDM, and relate more to
+developing content that is intended to be a web-based resource. </p>
+<p><strong>Concepts recorded in a file name may include a project
+descriptor, a descriptor of what’s in the file, the name of the creator
+or author, a date, a version number, etc.</strong> </p>
+<p>Determine early on what metadata should be recorded in file names;
+these elements may differ between file content types (ie manuscript,
+data, output of analysis), between data collection methods
+(observational, experimental, survey, sensor etc), and analysis tool
+(manual coding (Excel), software assisted (NVivo), scripted (R, Python
+etc). Common concepts to record in a file name include the project
+itself, or an abbreviated version of it, the name of the author, the
+name of the subject, the date of collection, the date of modification,
+the version, etc. </p>
+<p>When recording dates in a file name, these should be recorded as a
+set of 8 numbers, the first four for the year, the next two for the
+month, and the last two for the day. When a month or day is a single
+digit, these should be preceded by a 0. For example, January 3, 2023
+would be recorded as 20230103. When done in this order, dates will
+always be sorted properly. </p>
+<p>Recording a version number, or ordering files by number, should be
+done with place holders for at least 2 digits, with single digit entries
+being preceded by a 0. As with dates, when done in this order, numbers
+will always be sorted properly by a computer. For example, version-03
+and version-13 will be sorted in order, but version-3 and version-13
+risk being out of order. </p>
+<p><strong>File names should be all lowercase.</strong> </p>
+<p>Some operating systems are case sensitive and some are not. This can
+be problematic if you have to move files between computers with
+different operating systems; a common occurrence in academia where
+personal computers may be Macs, IT supported lab infrastructure on
+Windows, and Advanced Research Computing infrastructure on Linux. </p>
+<p>When operating systems are not case sensitive, the file titled
+my-research-project.docx and MY-RESEARCH-PROJECT.docx will be treated as
+the same file name, which risks you overwriting the one file with the
+other unintentionally if you move these files from a case sensitive
+environment to one that is not. This issue is easily resolved by
+avoiding capitalization in file naming. </p>
+<p><strong>Concepts – or elements – of a file name should be ordered by
+what is considered most important to the group.</strong> </p>
+<p>Depending on the file and situation, the author, date, project name,
+etc. may or may not be the most relevant piece of information needed
+when looking at a directory full of files. Rank the hierarchy of the
+information you need to provide in a file name and develop a convention
+that adheres to this prioritization. This order, and the scope of
+metadata recorded in the file name, will likely differ from files
+containing data, outputs of analyses, manuscripts, etc. </p>
+<p><strong>All of these components should be meaningful.</strong> </p>
+<p>In this context, meaningful refers to a file name being human
+interpretable and machine readable. This is described in more detail
+below. </p>
+<p><strong>All file names should end with a file type extension and file
+extensions should be separated from the rest of the file name with a
+period.</strong> </p>
+<p>A file type extension is the primary indicator of the type of
+application that will be able to open a given file. This information is
+used as much by a human reading the file as it is by an operating system
+trying to decide which program to open that .docx or .jpeg file with.
+The reason for the period is to help your operating system identify the
+file type with a known designator. </p>
+<p>The reality is that a file extension is simply part of a file name.
+Generally, a file extension is created when a program generates a file.
+But if, for example, we select options to hide file extensions and then
+move these files between computers and operating systems, we risk losing
+the file extension as part of the file name along the way. While not
+irreversible, since we now know that we can simply add an extension, as
+this is part of the file name, it can create unnecessary headaches. </p>
+<p>If you want to see this principle in action, find a pdf, rename it to
+end in docx (you will probably get a warning from your operating system,
+but that is ok), and try opening it. To resolve what you have done,
+simply rename the file again to end in .pdf. </p>
+<p><strong>File naming conventions should be documented.</strong> </p>
+<p>All file naming conventions should be documented, describing the
+standard and how to implement and interpret it; see the section on
+documentation for advice on how and where to do this. </p>
+<h3 id="human-interpretable-machine-readable">Human Interpretable &amp;
+Machine Readable</h3>
+<p>File names need to achieve two primary goals: they need to make sense
+to a human reading them, and they need to be constructed in a way that
+allows a computer to parse or process them. That is, file names should
+be human interpretable and machine readable. </p>
+<p><strong><em>Human interpretable</em></strong>  </p>
+<p>A file name needs to be conceptually meaningful to be human
+interpretable. To do this, it needs to convey some basic information to
+a person reading it. We do this, as noted above, by integrating metadata
+into the file name in conceptual blocks. The metadata elements will be
+dependent on the file, the project, and lab preferences, but should
+probably include things such as: </p>
+<ul>
+<li><p>Who created the file </p></li>
+<li><p>The date on which it was created </p></li>
+<li><p>The project to which it is connected </p></li>
+<li><p>The nature of the contents of the file </p></li>
+<li><p>If it has been modified </p></li>
+<li><p>The type or format of the file </p></li>
+</ul>
+<p>That is, you should be able to look at a file name and tell who
+created it, when it was created, what it is related to, what is inside
+of it, if it has been updated, and what application you should expect to
+use to open it. </p>
+<p>By using underscores _ to break up the metadata in a file name and by
+always using the same patterns, we quickly become attuned to these
+patterns, and picking out specific files from a long list becomes
+increasingly easy. </p>
+<p>[possible image of marked up file name] </p>
+<p><strong><em>Machine readable</em></strong>  </p>
+<p>A file name that is machine readable or machine interpretable means
+creating file names in such a way that they can be sorted by an
+application along specified delimiters. This means building names
+according to set patterns, which can then be parsed, and if necessary,
+described. It also means building our names in such a way that if you
+move them from one computer to another, from one application to another,
+or from one operating system to another, the files remain interpretable
+in exactly the same way. </p>
+<p>By using underscores _ to break up the metadata in a file name and by
+always using the same patterns, you can computationally isolate files
+based on each of these attributes irrespective of the directory
+structure in which we store them, and, for example, find all files from
+a particular creator, project, or created on a specific date. </p>
+<h3 id="building-a-file-naming-convention">Building a file naming
+convention</h3>
+<p>The type of data you are working with, and the way in which it is
+collected, will play a large part in how file naming conventions are
+determined. For example, with time series data, dates are extremely
+important, whereas for participant data, participant IDs may be a key
+element, while in automated data collection the ID of the sensor used
+may be an integral identifier in a file name. </p>
+<p>To keep things manageable, abbreviations can also be used, but keep
+in mind that while convenient to write, these can be ambiguous to the
+reader. </p>
+<p>In the resources section you can find additional real-world
+implementations of various file naming conventions used in different
+disciplines and for different projects as well as how these conventions
+are described in documentation. It is important to remember that these
+are all conventions, derived to solve specific file organization
+challenges, and that any convention is better than no convention.</p>

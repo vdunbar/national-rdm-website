@@ -1,0 +1,142 @@
+p{
+    font-size: 1.25em;
+    line-height: 1.3em;
+}
+
+.markdown-body p {
+    font-size: 1.25em;
+}
+
+.markdown-body h1 {
+    display: none;
+}
+
+ul li {
+    /*font-size: 1.25em;*/
+}
+
+.markdown-body ul li {
+    font-size: 1em;
+}
+
+.readMore a:link, .readMore a:visited, .readMore a:hover, .readMore a:active {
+    text-decoration: none;
+    color: #fff;
+}
+
+.findResources a:link, .findResources a:visited, .findResources a:hover, .findResources a:active {
+    text-decoration: none;
+    color: #fff;
+}
+
+#wrapper {
+    width: 70%;
+    margin: auto;
+}
+#menuItems {
+    margin-top: calc(100vh/6);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.menuButton {
+    display: inline-block;
+    height: 175px;
+    width: 175px;
+    padding: 0px;
+    margin: 5px auto;
+    background-color: #D5F2F7;
+    border: 3px solid #137F94;
+    border-radius: 50%;
+    font-size: 1.5em;
+    cursor: pointer;
+}
+
+.spacer, .arrow {
+    margin: 2px 2px;
+}
+
+.spacer {
+    border: none;
+    background-color: #137F94;
+    border-radius: 50%;
+    height: 12px;
+    width: 12px;
+}
+
+.arrow {
+    height: 18px;
+    width: 18px;
+    background-color: #fff;
+    border: solid #137F94;
+    border-width: 0 5px 5px 0;
+    display: inline-block;
+    padding: 3px;
+    transform: rotate(45deg);
+    -webkit-transform: rotate(45deg);
+}
+
+#intro, .summaryContent {
+    width: 75%;
+    margin: auto;
+}
+
+#submenuItems {
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 5%;
+    margin-bottom: 100px;
+    border-top: 3px solid #137F94;
+}
+
+#submenuItems ul {
+    text-align: center;
+}
+
+#submenuItems ul li {
+    display: inline-block;
+    padding: 20px;
+    background-color: #273746;
+    color: #fff;
+    border: 3px solid #fff;
+    cursor: pointer;
+    font-size: 1.25em;
+}
+
+.summaryLinks, .summaryContent {
+    display: none;
+}
+
+#intro {
+    display: block;
+}
+
+.readMore, .findResources {
+    float: right;
+    color: #fff;
+    margin: 10px;
+    padding: 20px;
+    font-size: 1.25em;
+    border: none;
+    cursor: pointer;
+}
+
+.readMore {
+    background-color: #137F94;
+}
+
+.findResources {
+    background-color: #9A7D0A;
+}
+
+#institutionList {
+    margin-top: 50px;
+    display: none;
+}
+
+#more {
+    padding: 0 10%;
+    overflow: hidden;
+}

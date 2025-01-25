@@ -1,0 +1,180 @@
+<style>
+    body {
+      width: 60%;
+      margin: auto;
+      font-family: sans-serif;
+      font-size: 1em;
+    }
+</style>
+<h2 id="the-research-data-life-cycle">The Research Data Life Cycle</h2>
+<p>The research life cycle and the research data life cycle are deeply
+entwined. The research life cycle is generally depicted as beginning
+with information gathering, which in turn leads to a research question
+and potentially hypothesis generation, after which an appropriate study
+design is developed to address this question or point of inquiry, a
+relevant source of data is identified, data are collected and in some
+way, shape or form, are then transformed and analyzed, from which
+summaries or conclusions are drawn, which in turn are described, shared,
+and disseminated, ultimately contributing to the body of works that form
+that basis of further information gathering. While this model may lack
+nuance, it captures the necessary stages to enable one to plan a
+research project.</p>
+<p><em>hold for research life cycle image</em></p>
+<p>The research data life cycle begins alongside information gathering,
+as the disciplinary norms that form the foundation of existing knowledge
+in the field create the constructs through which data are understood,
+and through which the relevancy of particular data are defined. This is
+to say that while a research project may collect new data, the
+constructs that define data and the methodologies by which these
+constructs are acted upon to collect and work with data are embedded in
+disciplinary norms.</p>
+<p>The research data life cycle follows thereafter quite closely
+alongside the research life cycle, but with special considerations,
+including moving from a collected form of data to one suitable for
+analysis, being subset for various analyses, being branched for storage
+in various locations, even if only to maintain a backup, to deposit,
+either in support of an output or for the sake of preservation itself,
+wherein it either becomes part of the body of scholarly works through
+its association with the dissemination of one’s findings, or potentially
+a dataset that helps to inform disciplinary norms for what data looks
+like and how it is stored or preserved.</p>
+<p><em>research data life cycle image</em></p>
+<p>A fundamental goal of RDM is developing processes to manage data
+throughout this life cycle. While there are discrete tasks that allow
+one to achieve each of these aspects of data management, success in this
+respect may be measured by the degree to which connections among various
+research data related objects, such as data sources, data collection
+tools, etc. are maintained, and continually tracked as data objects are
+manipulated as part of the research lifecycle. Connections are generally
+managed through documentation, which has a dedicated section in this
+text, while continuity is managed through some form of version control,
+discussed briefly below.</p>
+<h3 id="research-data-as-a-continuum">Research Data as a Continuum</h3>
+<p>Data are often referred to as either raw or clean; the former
+representing data in their collected form, the latter as they are
+presented for analysis. We suggest that this is a problematic dichotomy;
+as a constructed product, data are in a continual process of being
+reshaped and mutated. Thus, there is a sense of rawness to all data,
+especially when considered in the context of data re-use, where one
+person’s ‘clean’ data may be another person’s ‘raw’ data. This argument
+is made elsewhere in this text in relation to conceptualizing data as a
+‘living’ object. Understanding data through this continuum reinforces
+the reality that research data need be adapted to support specific
+analyses and conclusions.</p>
+<p>Because of this, we prefer to classify data in terms of, first, its
+source, and second as a series of versioned entities, where we start
+with data in the form in which it was collected (original data) and
+document the changes made to these for specific analyses (processed
+data). This documentation may come in the form of file naming
+conventions to easily identify each modified version or a readme or data
+dictionary of some sort that clearly indicates how the data were
+transformed. In some disciplines, this documentation may reside as
+comments within a script using a programming language.</p>
+<p>Exactly what original data and processed data look like will depend
+on one’s area of research, and how those data are being used to address
+specific research questions. Examples of original data include:</p>
+<ul>
+<li>Automated instrument data used in the sciences and engineering,
+which may result in unintended, mis-calibrated, or missing values</li>
+<li>Experimental data collected with tools designed to facilitate data
+entry over data analysis, requiring post processing to enable
+analysis</li>
+<li>Observational data where a lack of control over the subjects
+produces missing or otherwise anomalous values</li>
+<li>Survey data in which the researcher is reliant on participant entry
+of data that introduces missing values or unexpected values due to a
+lack of standardization</li>
+<li>Interview data subject to iterative attempts to collate themes and
+trends where coded values may be added, dropped, or amalgamated</li>
+<li>Datasets acquired from other researchers or institutions that either
+have characteristics of the above or require transformation for
+analysis, such as normalization, constructing derived variables,
+etc</li>
+</ul>
+<h3 id="version-control">Version Control</h3>
+<blockquote>
+<p>The discussion on version control will specifically cover research
+data, but it should be noted that these same considerations apply to any
+supplemental documents and files related to a research project. For
+example, version control is equally useful for tracking manuscript
+changes.</p>
+</blockquote>
+<p>Whether your data is born digital or collected manually and converted
+to digital format, it will undergo some form of transition between
+collection, analysis, reporting, and storage. Depending on how you plan
+to clean and analyze your data, you will likely end up with several
+versions of your data, or a data file that is the product of several
+merged files. This merger may take on several manifestations that impact
+how changes are tracked; both qualitative and quantitative data
+frequently end up in databases, as spread sheets, or files stored in
+folders. The act of tracking these changes is what we refer to as
+version control.</p>
+<p>The goal of version control in the context of RDM is primarily as a
+light audit trail; we want to be able to discern what changed, when it
+changed, how it changed, and who changed it. This way we have a system
+and a record that covers our data through the research life cycle. There
+are, of course, additional benefits that arise from this, such as easily
+identifying what the most recent version of a file is or backtracking to
+fix an issue.</p>
+<p>How and where your data are stored will limit how you can track
+changes to your data, and these will be further impacted by aspects such
+as disciplinary norms, your own skill sets, and the skill sets of the
+people you collaborate with. There are many ways to manage the
+versioning of files, more than can be covered here. However, two broad
+categories of version control systems that you should be familiar with
+include manual, through file naming and programmatically, via
+software.</p>
+<p>Certain versioning systems may lend themselves better to specific
+types of research workflows, files, and data; it is important to
+consider this before beginning your research and having an appropriate
+system in place. It is also important to document any manual version
+control systems you use, and strategies for doing so are addressed in
+the chapter on documentation. If you have questions about what
+versioning system will be best for you, talk to colleagues or contact
+your institutional research support units.</p>
+<h3 id="overview-of-version-control">Overview of Version Control</h3>
+<p><strong><em>Manual version control</em></strong></p>
+<p>File naming is discussed in more detail in its own section, here we
+touch only on considerations for versioning files. Manual version
+control is accomplished using file naming conventions. This type of
+version control lends itself well to managing administrative documents
+and manuscripts. However, depending on the type of data you have
+collected and the workflows you feel comfortable with, it can also work
+well for data.</p>
+<p>Manual version control can be accomplished by adding an underscore
+and a version number after a file name (i.e. _v01, _v02, etc.). It is
+good practice to enter two digits (i.e. _v01 vs. _v1.), as often systems
+will use the first numerator to order numbers and will place “_v12”
+ahead of “_v2”. If you anticipate having hundreds or thousands of files
+within the same naming set, begin your numbering with the appropriate
+number of digits.</p>
+<p>In addition to a version number, especially in a collaborative
+environment, other key pieces of information to append to a file name
+may include a project name, analysis type, an editor’s initials, the
+date it was last edited, ect. The key is to systematically embed a piece
+of information in the file name that allows for easy identification of
+what the file is, who last changed a file, when the file was last
+changed, or where in the sequence of file changes this file resides, and
+the like.</p>
+<p><strong><em>Working with automated version control</em></strong></p>
+<p>Automated version control systems are computer applications that
+employ metadata – capturing similar information to that of manual naming
+systems.</p>
+<p>Automated version control can help save time, but may only be
+suitable for certain file types or available on certain storage
+platforms. Also, version control systems vary widely in capabilities and
+complexities. When choosing an automated version control system, ensure
+it can be implemented within your current research environment. If your
+chosen tools are too challenging to use or unavailable on all platforms
+where research materials are managed, this may create undue
+difficulties. Finding a system that can be consistently implemented
+within your current environment is critical to applying automated
+version control.</p>
+<p>Because of the degree of variation in version control systems, using
+these systems is beyond the scope of this text. However, in general,
+when you use automated version control systems, the naming conventions
+used to manually version work should be ignored. Also, collaborative
+storage platforms and version control frequently go hand in hand. If you
+are using institutionally supported storage solutions, contact your
+research support units to learn how these platforms implement version
+control.</p>
