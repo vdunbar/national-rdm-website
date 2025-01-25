@@ -15,6 +15,19 @@ ul li {
     /*font-size: 1.25em;*/
 }
 
+#institutionList ul {
+    padding-top: 3em;
+}
+
+#institutionList ul li {
+    font-size: 1.4em;
+    display: block;
+    padding: 1em;
+    margin-top: 1em;
+    background: brown;
+    font-size: 125%;
+    color: #fff;
+
 .markdown-body ul li {
     font-size: 1em;
 }
