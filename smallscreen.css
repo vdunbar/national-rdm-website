@@ -15,15 +15,6 @@ ul li {
     /*font-size: 1.25em;*/
 }
 
-.chapter-connection {
-    margin-top: 2em;
-    margin-right: 2em;
-    padding: 1em;
-    background: #fff;
-    border: 1px solid;
-    font-size: .75em;
-}
-
 #institutionList ul {
     padding-top: 3em;
 }
@@ -49,6 +40,11 @@ ul li {
 }
 
 .findResources a:link, .findResources a:visited, .findResources a:hover, .findResources a:active {
+    text-decoration: none;
+    color: #fff;
+}
+
+#institutionList a:link, #institutionList a:visited, #institutionList a:hover, #institutionList a:active {
     text-decoration: none;
     color: #fff;
 }

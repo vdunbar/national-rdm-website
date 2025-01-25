@@ -43,6 +43,11 @@ ul li {
     color: #fff;
 }
 
+#institutionList a:link, #institutionList a:visited, #institutionList a:hover, #institutionList a:active {
+    text-decoration: none;
+    color: #fff;
+}
+
 #wrapper {
     width: 70%;
     margin: auto;
