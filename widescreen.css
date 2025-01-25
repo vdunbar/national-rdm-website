@@ -15,6 +15,15 @@ ul li {
     /*font-size: 1.25em;*/
 }
 
+chapter-connection {
+    margin-top: 2em;
+    margin-right: 2em;
+  padding: 1em;
+  background: #fff;
+  border: 1px solid;
+  font-size: .75em;
+}
+
 #institutionList ul {
     padding-top: 3em;
 }
