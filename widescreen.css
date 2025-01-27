@@ -63,7 +63,7 @@ ul li {
     margin: auto;
 }
 #menuItems {
-    margin-top: calc(100vh/6);
+    margin-top: calc(100vh/15);
     display: flex;
     justify-content: space-between;
     align-items: center;
