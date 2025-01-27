@@ -1,6 +1,9 @@
 $(document).ready(function(){
     $(".menuButton").click(function(){
         var id = $(this).attr("id")
+        document.querySelectorAll('.summaryLink').forEach(item => {
+            item.style.backgroundColor = "#273746";
+        });
         $('.summaryLinks').hide();
         $('#institutionList').hide();
         $('.readMore').remove();
@@ -25,6 +28,11 @@ $(document).ready(function(){
     });
     $('.summaryLink').click(function(){
         var id = $(this).attr("id")
+        console.log(id);
+        document.querySelectorAll('.summaryLink').forEach(item => {
+            item.style.backgroundColor = "#888888";
+        });
+        document.getElementById(id).style.backgroundColor = "#137F94";
         // commented lines are for local testing
         var readMoreButton = '<button class = "readMore"><a href="./chapter-md-files/ch-' + id.slice(0, -13) + '.html">Read more...</a></button>'
         //var readMoreButton = '<button class = "readMore"><a href="https://rochlinn.github.io/rdm-test-site/chapter-md-files/ch-' + id.slice(0, -13) + '.html">Read more...</a></button>'
